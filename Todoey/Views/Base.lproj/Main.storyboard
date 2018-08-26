@@ -29,14 +29,15 @@
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Lvv-6J-J9S" id="tLD-rF-lgj"/>
-                            <outlet property="delegate" destination="Lvv-6J-J9S" id="43F-je-0fw"/>
+                            <outlet property="delegate" destination="Lvv-6J-J9S" id="K0V-N7-vfd"/>
+                            <outlet property="prefetchDataSource" destination="Lvv-6J-J9S" id="wct-IK-h2g"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Todoey" id="E0V-hg-kIa">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="hGs-GW-Yf4">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="addButtonPressed:" destination="Lvv-6J-J9S" id="LdO-aH-jVT"/>
+                                <action selector="addButtonPressed:" destination="Lvv-6J-J9S" id="Diq-xo-LZe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
