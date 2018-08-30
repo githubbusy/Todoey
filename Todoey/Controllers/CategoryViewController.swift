@@ -118,13 +118,21 @@ class CategoryViewController: UITableViewController {
         tableView.reloadData()
     }
     func loadCategories() {
-        let request: NSFetchRequest<Category> = Category.fetchRequest()
+        
+        let request: NSfetchRequest<Category>  = Category.fetchRequest()
         do {
-            categories =  try context.fetch(request)
-            
-        } catch {
+            categories = try context.fetch(request)
+        } catch  {
             print("Error loading categories \(error)")
         }
+//        let request: NSFetchRequest<Category> = Category.fetchRequest()
+        
+//        do {
+//            categories =  try context.fetch(request)
+//
+//        } catch {
+//            print("Error loading categories \(error)")
+//        }
         tableView.reloadData()
     }
     
